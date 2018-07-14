@@ -6,44 +6,43 @@
 	<link rel="icon" type="image/png" href="https://avatars0.githubusercontent.com/u/10557728?v=3&s=32"/>
 </head>
 <body>
-<section class="hero is-primary">
-	<div class="hero-body">
-		<div class="container">
-			<h1 class="title">
-				Trivia Minigame - Migrator
-			</h1>
+	<section class="hero is-primary">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">
+					Trivia Minigame - Migrator
+				</h1>
+			</div>
 		</div>
-	</div>
-</section>
-<section class="section">
-	<div class="tile is-ancestor">
-	  <div class="tile is-parent">
-	    <article class="tile is-child box">
-	      <p class="title">Original Questions</p>
-	      <div class="content">
-			<div class="field is-fullwidth">
-			  <div class="control">
-			    <input id="separator-input" class="input is-info" type="text" placeholder="Separator" value=" ## ">
-			  </div>
+	</section>
+	<section class="section">
+		<div class="tile is-ancestor">
+			<div class="tile is-parent">
+				<article class="tile is-child box">
+					<p class="title">Original Questions</p>
+					<div class="content">
+						<div class="field is-fullwidth">
+							<div class="control">
+								<input id="separator-input" class="input is-info" type="text" placeholder="Separator" value=" ## ">
+							</div>
+						</div>
+						<textarea id="input-area" class="textarea is-info" rows="10" type="text" placeholder='Input your "questions.txt" content here and click convert'></textarea>
+					</div>
+				</article>
 			</div>
-			<textarea id="input-area" class="textarea is-info" rows="10" type="text" placeholder='Input your "questions.txt" content here and click convert'></textarea>
-	      </div>
-	    </article>
-	  </div>
-	  <div class="tile is-parent">
-	    <article class="tile is-child box">
-	      <p class="title">Converted Questions</p>
-	      <!-- <p class="subtitle">Copy the questions from here</p> -->
-	      <div class="content">
-			<div class="field is-fullwidth">
-			<button id="convert-button" class="button is-success is-fullwidth">Convert</button>
+			<div class="tile is-parent">
+				<article class="tile is-child box">
+					<p class="title">Converted Questions</p>
+					<div class="content">
+						<div class="field is-fullwidth">
+							<button id="convert-button" class="button is-success is-fullwidth">Convert</button>
+						</div>
+						<textarea id="output-area" class="textarea is-info" rows="10" type="text" placeholder="Copy the result from here" readonly></textarea>
+					</div>
+				</article>
 			</div>
-			<textarea id="output-area" class="textarea is-info" rows="10" type="text" placeholder="Copy the result from here" readonly></textarea>
-	      </div>
-	    </article>
-	  </div>
-	</div>
-</section>
+		</div>
+	</section>
 </body>
-	<script src="js/TriviaMinigameMigrator.js"></script>
+<script src="js/TriviaMinigameMigrator.js"></script>
 </html>
